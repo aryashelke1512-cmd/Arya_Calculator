@@ -13,7 +13,8 @@ function calculateSavings() {
 
   //2. Perform arithmetic calculations using JS variables 
   let monthlySavings = pocketMoney - expenses;
-  let yearlySavings = monthlySavings * 12;
+  let yearlySavings = monthlySavings * 12
+  
 
   //3. Construct the output message
   let resultHTML = "<b>Results for : " + name + ":</b><br>" +
