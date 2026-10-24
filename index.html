@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<link rel="stylesheet" href="style.css">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Student Pocket Money & Savings Calculator</title>
+</head>
+
+<body>
+  <script src="script.js"></script>
+  <div class="calculator-container">
+    <h1>Pocket Money & Saving Calculator</h1>
+    <p class="subtitle">Learn financial math with HTML Forms & JS!</p>
+
+    <!--HTML Form Elements-->
+    <form id="davingForm">
+      <div class="form-group">
+        <label for="studentName">Student Name:</label>
+        <input type="text" id="studentName" placeholder="e.g., Rohan Gupta" required>
+      </div>
+
+      <div class="form-group">
+        <label for="monthlyMoney">Monthly Pocket Money (₹):</label>
+        <input type="number" id="monthlyMoney" placeholder="e.g., 500" required>
+      </div>
+
+      <div class="form-group">
+        <label for="monthlySpent">Monthly Expenses (₹):</label>
+        <input type="number" id="monthlySpent" placeholder="e.g., 350" required>
+      </div>
+
+      <button type="button" class="calc-btn" onclick="calculateSavings()">Calculate Savings</button>
+    </form>
+
+    <!--Dynamic Output Box-->
+    <div id="result-display"></div>
+  </div>
+  <!--JavaScript Logic-->
+</body>
+
+</html>
