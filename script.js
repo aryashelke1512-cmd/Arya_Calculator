@@ -16,11 +16,11 @@ function calculateSavings() {
   let yearlySavings = monthlySavings * 12;
 
   //3. Construct the output message
-  let resultHTML = '<b>Results for ${name}:</b><br>' +
-    'Monthly Savings: ₹${monthlySavings}<br>' +
-    'Estimated Yearly Savings: ₹${yearlySavings}<br>' +
-    '<i>Great job managing your pocket money!</i>';
-
+  let resultHTML = "<b>Results for : " + name + ":</b><br>" +
+    "Monthly Savings: ₹" + monthlySavings + "<br>" +
+    "Estimated Yearly Savings: ₹" + yearlySavings + "<br>" +
+    "<i>Great job managing your pocket money!</i>";
+  
   //4. Display the result dynamicall on the webpage (DOM Manipulation)
   let displayBox = document.getElementById("result-display");
   displayBox.innerHTML = resultHTML;
